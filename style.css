@@ -4,8 +4,8 @@
 }
 
 html {
-    background-color:#fff ;
-    color:yellow;
+    background-color:#ebf2ff ;
+    color:black;
     text-rendering: optimizeLegibility;
     font-size: 16px;
     font-family: "work sans","Arial","sans-serif;";
@@ -13,7 +13,7 @@ html {
 }
 body {
 	font-family: 'Merriweather', serif;
-	background-color: #f9fafc;
+	/* background-color: #f9fafc; */
 }
 
 .btn {
@@ -26,18 +26,19 @@ body {
 	color: #fff;
 }
 .navbar {
-	display: flex;
-	align-items: center; /*align-items to be a center;*/
+	display: flex; /* orderFood,zomato 2um pakkatu pakkatula waaratuku */
+	align-items: center; /*align-items to be a center;orderFood,zomato 2um ore ner ku waaratuku*/
 	justify-content: space-around;
+	
 }
-
+.navbar__brand{ /*logo ku neradiya size kudutta hight & width la problem wara elum,so ippidi kudututu,idu ulluku logo va potta sari*/
+	width: 100px;
+}
 .navbar__logo {
     width: 100%;
 }
-.navbar__brand{
-	width: 100px;
-}
-.nav__item{
+
+.button__primary{
 	background-image: linear-gradient(
 		to right,
 		#ff512f 0%, /* starting position */ 
@@ -50,26 +51,377 @@ body {
 	border-radius: 6px;
 	font-weight: 600;
 }
-.nav__item:hover {
+.button__primary:hover {
 	/*background-position: right center;*/
 	border: 2px solid #8E2657;
 	cursor: pointer;
 }
 
-@media (min-width: 768px){
-	.navbar {
+/***************************/
+.container { /*web page da 2 side um gap wara*/
+	padding: 20px;
+	max-width: 100%; /*full display aum fill pannum*/
+	margin: 0 auto; /*2 pakkamum equal aaha*/ /* it will give proximate very good equal margin left and right */
+}
+/*.hero__container {
+	display: flex;
+}*/
+.hero__image__container{
+	width: 100%; /* bcz mobile view.so i put 100% */
+}
+.hero__description {
+	width: 100%;
+	
+
+}
+.hero__image{
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero__text {
+	font-size: 30px;
+	font-weight: 800;
+	margin: 20px 0;
+	color: #1d3557;
+}
+
+
+/*************************************/
+
+.explore__menu__text {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-align: center; /*inga naaga flex use panna maattom,bcz inga text ikiradala*/
+	font-weight: 800;
+	margin: 5px 0;
+	color: #1d3557;
+}
+.food__card{
+	background-color: #F9F9F9;
+
+}
+.food__card__image__container {
+	width: 100%;
+}
+.food__image{
+	border-radius: 8px 8px 0 0;
+	width: 100%;
+}
+.food__card__description {
+	padding: 15px; /*idai px il kudukka reason,emakku generala top,right..... ku tewa paduradala*/
+}
+/******* Middle Button **********/
+
+.button__primary__middle {
+	/*background-image : linear-gradient(
+		to right,
+		#ff512f 0%, /* starting position */ 
+		#dd2476 51%,
+		#ff512f 100%
+		);*/
+	color: #fff;
+	border: none;
+	width: 100%;
+	padding: 12px 40%;
+	border-radius: 6px;
+	font-weight: 600;
+	white-space: nowrap; /*enna situation laum letters ellam ore line la taan ikim*/
+	font-size: 16px;
+	background-color: transparent;
+
+	
+}
+
+/****** midle bar container***********/
+.middle__bar {
+	margin: 40px auto;
+}
+
+.middle__bar__text {
+	width: 100%;
+}
+/*.middle__bar__text__h1{
+	width: 80%;
+	font-size: 24px;
+} */
+.middle__bar__text__h1 {
+	font-size: 30px;
+	font-weight: 800;
+	margin: 20px 0;
+	color: #1d3557;
+}
+.middle__bar {
+	display: block;
+}
+.middle__bar__image__container {
+	width: 100%;
+	margin: 20px auto;
+}
+
+
+
+.middle__bar__image__container__middle {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+#im1 {
+	width: 45%;
+
+}
+#im2 {
+	width: 55%;
+}
+/*.middle__bar__image__container__middle2{	
+	width: 100%;
+	display: flex;
+} */
+#im4 {
+	width: 45%;
+}
+#im3 {
+	width: 55%; 
+}
+
+.middle__bar__image1{
+	border-radius: 10px;
+	width: 100%;
+	padding: 1px 3px;
+}
+
+.middle__bar__image2{
+	border-radius: 10px;
+	width: 100%;
+	padding: 0 3px;
+}
+.middle__bar__image__container__middle2 {
+	display: flex;
+	width: 100%;
+
+}
+
+
+
+/************ footer image **********/
+
+.footer__image__division {
+	width: 100%;
+	
+
+}
+.footer__image{
+	border-radius: 8px;
+	width: 100%;
+	height: 200px;
+	filter: brightness(50%);
+}
+.footer__image__section {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 14px ;
+  font: merriweather;
+  margin-top: 60px;
+  margin-bottom:30px;
+
+}
+.footer__image__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 80%;
+  /*text-align: center;
+  z-index: 3; 
+	margin: 0 16px;
+  */
+  font-size: 18.72px;
+  
+  
+}
+
+
+
+/*********** footer **********/
+.footer__section {
+	position: relative;
+
+}
+.footer{
+	text-align: center;
+	border-radius: 8px;
+	width: 100%;
+	background-image: linear-gradient(
+		to right,
+		#ff512f 0%, /* starting position */ 
+		#dd2476 51%,
+		#ff512f 100%
+		);
+	}
+	.footer__li {
+	list-style-type: none;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	color: white;
+	padding-bottom: 6px;
+
+
+	/*position: absolute;*/
+}
+.footer__heading {
+	font-size: 75px;
+	color: white;
+	padding-bottom: 25px;
+}
+.last__bar {
+	width: 100%;
+}
+.last__bar__heading {
+	color: #1D3557;
+	font-size: 24px;
+
+}
+.last__bar__search {
+	text-align: center;
+	align-items: center;
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+	margin-right: auto;
+  margin-left: auto;
+}
+.email__bar {
+	padding: 8px;
+	background: #FCEDF0;
+	border-radius: 8px;
+	border-color: deeppink;
+	width: 60%;
+	margin-right: 8px;
+	/*text-align: center; email bar ulluku ikira text*/ 
+	font-weight: 700;
+	color: #1d3557;
+	/*height:8%;*/
+
+}
+
+
+
+
+/****************************** MEDIA QUARY*************************************/
+
+@media (min-width:768px) { 
+.navbar {
 		justify-content: space-between;
 		padding: 10px 30px;
 		background-color: #fff;
 	}
+.hero__container { /*idu parent,engaluku child flex container type la tewa.....so display: flex endu podurom*/
+		margin-top: 20px;
+		display: flex;                 /*2aum pakkathu pakkathu side ku kondu wara*/
+		flex-direction: row-reverse;   /*left ikirada right side ku kondu wara*/
+		align-items: center; 						/*ondu mathaduku centera warum-nilai kuthtaha*/
+		width: 100%;
+	}
+.explore__menu__container {
+	position: relative;
+}
+.explore__menu__gradient__bg {
+	position: absolute;			 /* enave idan parent element ku relative kudukanum */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+		to right,
+		#ff512f 0%, /* starting position */ 
+		#dd2476 51%,
+		#ff512f 100%
+		);
+	z-index: -3;
+	transform: skewY(-5deg);
+}
+.explore__menu__lists { 
+	display: flex; /*so ellam side side ku warum*/
+	gap: 15px;
+	margin-top: 45px; /*or padding 30px*/ 
+	padding: 0 30px;
+} 
+#pizza__card {
+	margin-top: -20px;
+	margin-bottom: 30px;
+}
+	/******** Midle button********/
 
-@media (min-width: 1024px){
+.button__primary__middle:hover {
+	/*background-position: right center;*/
+	/*border: 2px solid #8E2657;*/
+	cursor: pointer;
+	background-color:white;
+	color:#8E2657 ;
+	font-size: 18px;
+}
+.middle__bar {
+		display: flex; /* orderFood,zomato 2um pakkatu pakkatula waaratuku */
+		align-items: center; /*align-items to be a center;orderFood,zomato 2um ore ner ku waaratuku*/
+		justify-content: space-between;
+
+}
+.last__bar {
+	width: 70%;
+	margin: 0 auto; / center ku kondu wara*/
+
+}
+.last__bar__heading {
+	font-size: 42px;
+}
+.email__bar {
+	font-size: 16px;
+}
+.footer__image__text {
+	font-size: 36px;
+	padding: 0 10px;
+	
+
+}
+
+.footer__image {
+	height: 300px
+}
+
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 70%; /*web page da 2 side um gap wara*/					
+	}
 	.navbar__brand {
 		width: 150px;
 	}
-	.nav__item{
+	.button__primary{
 		padding: 20px;
 		font-size: 20px;
-
+		white-space: nowrap;
 	}
+	.hero__description {
+		width:100%;  /* so anda image um text um equala 100% width edukkum */
+	}
+	.explore__menu__lists { 
+		gap: 25px; /*mela 768px la copy pannina 2 visiyam cut panna pattu iki*/
+	}
+	.hero__text {
+		font-size: 50px;
+	}
+	.explore__menu__text {
+		font-size: 48px;
+	}
+	.middle__bar__text__h1 {
+		font-size: 48px;	
+	}
+
+
 }
+
+
+

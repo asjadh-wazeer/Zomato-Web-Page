@@ -12,10 +12,146 @@
 				<img src="assets/logo.png" alt="logo" class="navbar__logo">
 			</div>
 			<div class="navbar__nav__items">
-				<button class="nav__item">Order Food</button> 
+				<button class="nav__item button__primary">Order Food</button> <!-- Button classa global variable aakuratuku taan 2 name -->
 			</div>
 		</nav>
 	</header>
+
+
+	<main class="container"> <!-- all the elements inside the class container,so padding ellatukum easy -->
+
+		<!-- Hero section -->
+		<section class="hero__container">
+			<div class="hero__image__container">
+				<img src="assets/hero.jpg" alt="hero image" class="hero__image"> 
+			</div>
+			<div class="hero__description">
+				<h1 class="hero__text">
+					Order food from favourite restaurants near you.
+				</h1>
+				<button class="button__primary">Order Now</button>
+			</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<!-- Explore Menu -->
+		<section class="explore__menu__container">
+			<h1 class="explore__menu__text">Explore Our Menu</h1>
+			<div class="explore__menu__gradient__bg">
+				
+			</div>
+			<div class="explore__menu__lists">
+
+
+				<!-- Burger -->
+				<div class="food__card"> <!-- parent class-->
+					<div class="food__card__image__container"> <!--image ku idth kudukka==> pacify parent width then spacify image width.. parent width willl be 100%. then image width will be 100% -->
+						<img src="assets/burger.jpg" alt="burger" class="food__image"> <!-- child image -->
+					</div>
+					<div class="food__card__description">
+						<h3 class="food__title">Burger</h3>
+						<p>Burger King, Mcdonalds, Burger Place <span style="color: #D83A56;">+3</span></p>
+
+					</div>
+				</div>
+
+				<!-- pizza -->
+				<div class="food__card" id="pizza__card"> <!-- parent class--> <!-- we put id,bcz we want to strictly override the css-->
+					<div class="food__card__image__container"> <!--image ku idth kudukka==> pacify parent width then spacify image width.. parent width willl be 100%. then image width will be 100% -->
+						<img src="assets/pizza.jpg" alt="burger" class="food__image"> <!-- child image -->
+					</div>
+					<div class="food__card__description">
+						<h3 class="food__title">Pizza</h3>
+						<p>Burger King, Mcdonalds, Burger Place <span style="color: #D83A56;">+3</span></p>
+
+					</div>
+				</div>
+
+				<!-- ice cream -->
+				<div class="food__card"> <!-- parent class-->
+					<div class="food__card__image__container"> <!--image ku idth kudukka==> pacify parent width then spacify image width.. parent width willl be 100%. then image width will be 100% -->
+						<img src="assets/iceCream.jpg" alt="burger" class="food__image"> <!-- child image -->
+					</div>
+					<div class="food__card__description">
+						<h3 class="food__title">Ice Cream</h3>
+						<p>Burger King, Mcdonalds, Burger Place <span style="color: #D83A56;">+3</span></p>
+
+					</div>
+				</div>
+			</div>
+			<br><br>
+				<!-- View more Button -->
+				<button class="button__primary__middle">View more</button>
+			</section>
+
+			
+			<section class="middle__bar">
+				<div class="middle__bar__text">
+					<h1 class="middle__bar__text__h1">Order From 100s of Restaurants</h1>
+				</div>
+				<div class="middle__bar__image__container">
+					<div class="middle__bar__image__container__middle">
+						<div class="middle__bar__image1" id="im1">
+							<img src="assets/restaurant1.jpg" alt="logo" class="middle__bar__image1" >
+						</div>
+						<div class="middle__bar__image1" id="im2">
+							<img src="assets/restaurant2.jpg" alt="logo" class="middle__bar__image1">
+						</div>
+					</div>
+
+					<div class="middle__bar__image__container__middle2">
+						<div class="middle__bar__image2" id="im3">
+							<img src="assets/restaurant3.jpg" alt="logo" class="middle__bar__image2">
+						</div>
+						<div class="middle__bar__image2" id="im4">
+							<img src="assets/restaurant4.jpg" alt="logo" class="middle__bar__image2">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="last__bar__section">
+				<div class="last__bar">
+					<h1 class="last__bar__heading">Stay Updated</h1>
+					<div class="last__bar__search">
+
+						<input type="email" placeholder="email@email.com" class="email__bar">
+						<button class="button__primary">Get Updates</button>
+
+					</div>
+				</div>
+			</section>
+			<div class="footer__image__section">
+				<div class="footer__image__division">
+					<img src="assets/restaurant.jpg" alt="footer image" class="footer__image">
+				</div> 
+				<!--<div class="footer__image__text__div">-->
+					<p class="footer__image__text">When a man's stomach is full it makes no difference whether he is rich or poor.</p>
+				<!--</div>-->
+			</div>
+
+			<section class="footer__section">
+			<div class="footer">
+				<div class="footer_img_container">
+					<h1 class="footer__heading">zomato</h1>
+				</div>
+				<div class="footer_list_container">
+					<ul>
+						<li class="footer__li">Pricing</li>
+						<li class="footer__li">Terms and condition</li>
+						<li class="footer__li">Partnership</li>
+						<li class="footer__li">Career</li>
+						<li class="footer__li">Contact</li>
+					</ul>
+				</div>
+			</div>
+			</section>
+
+			
+	</main>
 
 </body>
 </html>
