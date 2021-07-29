@@ -100,6 +100,7 @@ body {
 }
 .food__card{
 	background-color: #F9F9F9;
+	margin-bottom: 12px;
 
 }
 .food__card__image__container {
@@ -115,12 +116,12 @@ body {
 /******* Middle Button **********/
 
 .button__primary__middle {
-	/*background-image : linear-gradient(
+	background-image : linear-gradient(
 		to right,
 		#ff512f 0%, /* starting position */ 
 		#dd2476 51%,
 		#ff512f 100%
-		);*/
+		);
 	color: #fff;
 	border: none;
 	width: 100%;
@@ -129,7 +130,7 @@ body {
 	font-weight: 600;
 	white-space: nowrap; /*enna situation laum letters ellam ore line la taan ikim*/
 	font-size: 16px;
-	background-color: transparent;
+	/*background-color: transparent;*/
 
 	
 }
@@ -353,7 +354,9 @@ body {
 	margin-bottom: 30px;
 }
 	/******** Midle button********/
-
+.button__primary__middle {
+	background: none;
+}
 .button__primary__middle:hover {
 	/*background-position: right center;*/
 	/*border: 2px solid #8E2657;*/
