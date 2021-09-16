@@ -26,12 +26,12 @@ body {
 	color: #fff;
 }
 .navbar {
-	display: flex; /* orderFood,zomato 2um pakkatu pakkatula waaratuku */
-	align-items: center; /*align-items to be a center;orderFood,zomato 2um ore ner ku waaratuku*/
+	display: flex; 
+	align-items: center; 
 	justify-content: space-around;
 	
 }
-.navbar__brand{ /*logo ku neradiya size kudutta hight & width la problem wara elum,so ippidi kudututu,idu ulluku logo va potta sari*/
+.navbar__brand{ 
 	width: 100px;
 }
 .navbar__logo {
@@ -58,16 +58,16 @@ body {
 }
 
 /***************************/
-.container { /*web page da 2 side um gap wara*/
+.container { 
 	padding: 20px;
-	max-width: 100%; /*full display aum fill pannum*/
-	margin: 0 auto; /*2 pakkamum equal aaha*/ /* it will give proximate very good equal margin left and right */
+	max-width: 100%; 
+	margin: 0 auto; 
 }
 /*.hero__container {
 	display: flex;
 }*/
 .hero__image__container{
-	width: 100%; /* bcz mobile view.so i put 100% */
+	width: 100%; 
 }
 .hero__description {
 	width: 100%;
@@ -93,7 +93,7 @@ body {
 .explore__menu__text {
 	margin-top: 10px;
 	margin-bottom: 30px;
-	text-align: center; /*inga naaga flex use panna maattom,bcz inga text ikiradala*/
+	text-align: center; 
 	font-weight: 800;
 	margin: 5px 0;
 	color: #1d3557;
@@ -111,7 +111,7 @@ body {
 	width: 100%;
 }
 .food__card__description {
-	padding: 15px; /*idai px il kudukka reason,emakku generala top,right..... ku tewa paduradala*/
+	padding: 15px; 
 }
 /******* Middle Button **********/
 
@@ -127,8 +127,7 @@ body {
 	width: 100%;
 	padding: 12px 40%;
 	border-radius: 6px;
-	font-weight: 600;
-	white-space: nowrap; /*enna situation laum letters ellam ore line la taan ikim*/
+	font-weight: 600;/*enna situation laum letters ellam ore line la taan ikim*/
 	font-size: 16px;
 	/*background-color: transparent;*/
 
@@ -299,8 +298,7 @@ body {
 	border-radius: 8px;
 	border-color: deeppink;
 	width: 60%;
-	margin-right: 8px;
-	/*text-align: center; email bar ulluku ikira text*/ 
+	margin-right: 8px; 
 	font-weight: 700;
 	color: #1d3557;
 	/*height:8%;*/
@@ -318,18 +316,18 @@ body {
 		padding: 10px 30px;
 		background-color: #fff;
 	}
-.hero__container { /*idu parent,engaluku child flex container type la tewa.....so display: flex endu podurom*/
+.hero__container { 
 		margin-top: 20px;
-		display: flex;                 /*2aum pakkathu pakkathu side ku kondu wara*/
-		flex-direction: row-reverse;   /*left ikirada right side ku kondu wara*/
-		align-items: center; 						/*ondu mathaduku centera warum-nilai kuthtaha*/
+		display: flex;                 
+		flex-direction: row-reverse;   
+		align-items: center; 						
 		width: 100%;
 	}
 .explore__menu__container {
 	position: relative;
 }
 .explore__menu__gradient__bg {
-	position: absolute;			 /* enave idan parent element ku relative kudukanum */
+	position: absolute;			 
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -344,7 +342,7 @@ body {
 	transform: skewY(-5deg);
 }
 .explore__menu__lists { 
-	display: flex; /*so ellam side side ku warum*/
+	display: flex; 
 	gap: 15px;
 	margin-top: 45px; /*or padding 30px*/ 
 	padding: 0 30px;
@@ -366,14 +364,14 @@ body {
 	font-size: 18px;
 }
 .middle__bar {
-		display: flex; /* orderFood,zomato 2um pakkatu pakkatula waaratuku */
-		align-items: center; /*align-items to be a center;orderFood,zomato 2um ore ner ku waaratuku*/
+		display: flex; 
+		align-items: center; 
 		justify-content: space-between;
 
 }
 .last__bar {
 	width: 70%;
-	margin: 0 auto; / center ku kondu wara*/
+	margin: 0 auto; 
 
 }
 .last__bar__heading {
@@ -397,7 +395,7 @@ body {
 
 @media (min-width: 1024px) {
 	.container {
-		max-width: 70%; /*web page da 2 side um gap wara*/					
+		max-width: 70%; 					
 	}
 	.navbar__brand {
 		width: 150px;
@@ -408,10 +406,10 @@ body {
 		white-space: nowrap;
 	}
 	.hero__description {
-		width:100%;  /* so anda image um text um equala 100% width edukkum */
+		width:100%;  
 	}
 	.explore__menu__lists { 
-		gap: 25px; /*mela 768px la copy pannina 2 visiyam cut panna pattu iki*/
+		gap: 25px; 
 	}
 	.hero__text {
 		font-size: 50px;
